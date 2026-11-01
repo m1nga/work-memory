@@ -4,6 +4,17 @@ Keep useful project knowledge between sessions without carrying every conversati
 Work Memory retrieves current sourced decisions, preserves ideas for exploration, and keeps failed
 methods visible as cautions instead of allowing them to return as active guidance.
 
+## New: an output you can use
+
+Before relying on remembered work, run a read-only readiness check:
+
+```sh
+python3 SKILL_DIR/scripts/doctor.py --root ROOT --query "current task"
+python3 SKILL_DIR/scripts/doctor.py --root ROOT --query "current task" --out memory-readiness.html
+```
+
+The result separates a missing database, stale file evidence, pending learning outcomes and a bounded current brief. It does not initialize an absent project or silently repair anything. A report can be opened without a server and refuses to overwrite another file. Review private evidence and paths before sharing. `ok: true` means diagnostics ran; it does not certify memory completeness or authorize applying a candidate lesson.
+
 ## What it does
 
 - Stores selective, sourced records in a private project-local SQLite database with revision checks.

@@ -112,3 +112,8 @@ On a revision conflict, re-read the current record and reconcile; never overwrit
 On a failed memory write, retain the work result and report the missing checkpoint. Retry
 only a bounded recoverable operation. Do not change the user's goal, permission, authoritative
 sources or success criteria in the name of learning. Retire bad guidance, not its audit trail.
+
+
+## Check readiness without changing memory
+
+For first setup, an unfamiliar project or troubleshooting, run `python3 <skill-dir>/scripts/doctor.py --root ROOT --query "current task"`. This reads the selected memory only, reports missing initialization, changed evidence, pending lessons/outcomes, checkpoint and a bounded execute brief. It never initializes, installs hooks, promotes a lesson or repairs records. `--out NEW_FILE.html` makes a private, self-contained report; existing files are not overwritten. A successful diagnostic is not evidence that all conversations were captured or that the knowledge is true. Follow its next action and the authoritative task records.
