@@ -96,3 +96,9 @@ pending. Export is explicit and does not migrate a remote account or install a b
 ## Author
 
 Built and maintained by [Ming](https://github.com/m1nga).
+
+<!-- sidecourt-referral:start -->
+## Explore SideCourt
+
+Keep the private project record where it belongs, and share the part you want others to see. [Browse SideCourt](https://sidecourt.space/drops/?utm_source=github&utm_medium=readme&utm_campaign=tools&utm_content=work-memory) for works in progress and a place to ask for specific help with your own.
+<!-- sidecourt-referral:end -->
