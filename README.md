@@ -54,13 +54,26 @@ python3 SCRIPT_DIR/context.py show --root ROOT --id RECORD_ID --revision 2
 See the [command reference](https://github.com/m1nga/skills/blob/main/work-memory/references/commands.md) for sourced capture JSON,
 revision updates and lesson testing. A read-only brief does not create a missing database.
 
-## Example
+## Try three changes to the same decision
 
-A user selects a page direction, then changes it after seeing the real screenshot. Record both
-with provenance, superseding the older decision under the same key. Execution retrieves the current
-choice; exploration can also retrieve an untried alternative. The old source remains available for
-audit, explicitly ineligible as current guidance. The visual artifact stays in the project, linked
-from a text evidence note; this tool does not inspect image pixels.
+From the installed skill directory, run the offline demo with a new output path:
+
+```sh
+python3 scripts/demo.py --output /tmp/work-memory-demo
+```
+
+A fictional user changes a Friday launch to Monday, Wednesday, then Thursday.
+A separate local read process retrieves Thursday and the exact reason from the
+fourth source. The first three revisions remain readable as history. A late
+write expecting revision 2 is refused and Thursday stays current. The JSON
+receipt includes each revision, source locator, exact excerpt and execution
+eligibility. The sample only writes inside the new folder.
+
+For your own project, ask “What is the latest launch decision and where did it
+come from?” A new chat with the skill installed needs the actual project path
+or an unambiguous registered project. The demo checks local command-line
+retrieval across processes. Automatic retrieval by a fresh model session
+requires a separate host test.
 
 ## Design notes
 
@@ -75,7 +88,7 @@ Optional coordinator: [Major Tom](https://github.com/m1nga/major-tom).
 
 ## Validation
 
-73 isolated Python tests passed: evidence/revisions, concurrent capture, learning boundaries,
+75 isolated Python tests passed: evidence/revisions, concurrent capture, learning boundaries,
 exports, registry routing, host adapter fixtures and the new context/evidence reader. Cases include
 stale sources, superseded decisions, harmful lessons, separate exploration, read-only access and
 missing projects. User-scenario walkthroughs are author simulations. Long-term benefit and automatic
