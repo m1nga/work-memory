@@ -1,8 +1,10 @@
 # Work Memory — Recover Current Context and Learn from Outcomes
 
-Keep useful project knowledge between sessions without carrying every conversation into the next.
-Work Memory retrieves current sourced decisions, preserves ideas for exploration, and keeps failed
-methods visible as cautions instead of allowing them to return as active guidance.
+When an AI assistant forgets a project decision between sessions, recover the
+current answer together with its source and revision history. Work Memory stores
+selected records locally, distinguishes accepted decisions from old ideas and
+checks whether file evidence is stale. Your workflow must actually record and
+retrieve that context; installing the skill alone does not create automatic memory.
 
 ## New: an output you can use
 
